@@ -1,0 +1,32 @@
+.header{
+  display: flex;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 75px;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 9.5px 22px 8px 17px;
+  &__left{
+    display: flex;
+    align-items: center;
+    gap: 52px;
+  }
+  &__tel{
+    font-size: 14px;
+    padding-top: 2px;
+  }
+}
+
+@media (min-width: 1400px){
+  .header{
+    padding: 11px 40px 15px 33px;
+    &__tel{
+      font-size: 16px;
+      padding-top: 7px;
+    }
+    &__sidebar{
+      display: none;
+    }
+  }
+}

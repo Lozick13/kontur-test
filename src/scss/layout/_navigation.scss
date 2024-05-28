@@ -1,0 +1,15 @@
+.navigation{
+  display: none;
+  gap: 47px;
+  padding-top: 11px;
+  a{
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1400px){
+  .navigation{
+    display: flex;
+
+  }
+}

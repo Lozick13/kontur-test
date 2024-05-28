@@ -1,0 +1,31 @@
+@import 'abstracts/all';
+@import 'core/all';
+@import 'components/all';
+@import 'layout/all';
+@import 'sections/all';
+@import 'pages/all';
+
+body {
+  min-width: 320px;
+  background: $background;
+  padding: 16px 13px;
+  height: 500px;
+}
+.scroll-bar-off {
+  overflow: hidden;
+
+  height: 100vh;
+}
+button:hover,
+a:hover,
+li:hover,
+.pointer {
+  cursor: pointer;
+}
+
+@media (min-width: 1400px){
+  body{
+    padding: 24px 120px;
+  }
+}
+
