@@ -1,0 +1,36 @@
+{
+  "name": "kontur-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode development --open",
+    "watch": "webpack --mode development --watch"
+  },
+  "devDependencies": {
+    "babel-loader": "^8.2.3",
+    "@babel/core": "^7.17.0",
+    "@babel/preset-env": "^7.17.0",
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^6.5.0",
+    "eslint": "^8.7.0",
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "filemanager-webpack-plugin": "^6.0.0",
+    "html-webpack-plugin": "^5.5.3",
+    "mini-css-extract-plugin": "^2.5.0",
+    "postcss-loader": "^6.1.1",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.5.1",
+    "sass": "^1.32.13",
+    "sass-loader": "^12.2.0",
+    "style-loader": "^3.3.0",
+    "svg-inline-loader": "^0.8.2",
+    "svgo": "^2.4.1",
+    "webpack": "^5.67.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.5.0",
+    "webpack-merge": "^5.8.0"
+  }
+}
