@@ -57,6 +57,12 @@
 .black{
   color: $black;
 }
+.black_hover{
+  transition-duration: 0.5s;
+  &:hover{
+    color: $orange;
+  }
+}
 .grey{
   color: $grey;
 }
