@@ -1,7 +1,8 @@
 *,
 *:before,
-*:after {
-  box-sizing: border-box;
+*:after
+{
+    box-sizing: border-box;
 }
 
 html,
@@ -53,67 +54,77 @@ footer,
 header,
 nav,
 section,
-video {
-  font: inherit;
-  font-size: 100%;
+video
+{
+    font: inherit;
+    font-size: 100%;
 
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 
-  vertical-align: baseline;
+    vertical-align: baseline;
 
-  border: 0;
+    border: 0;
 
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  text-size-adjust: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: none;
 }
 
-a {
-  text-decoration: none;
+a
+{
+    text-decoration: none;
 }
 
 footer,
 header,
 nav,
 section,
-main {
-  display: block;
+main
+{
+    display: block;
 }
 
-body {
-  line-height: 1;
+body
+{
+    line-height: 1;
 }
 
 ol,
-ul {
-  list-style: none;
+ul
+{
+    list-style: none;
 }
 
-a {
-  text-decoration: none;
+a
+{
+    text-decoration: none;
 }
 
 blockquote,
-q {
-  quotes: none;
+q
+{
+    quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
-q:after {
-  content: '';
-  content: none;
+q:after
+{
+    content: '';
+    content: none;
 }
 
-table {
-  border-spacing: 0;
-  border-collapse: collapse;
+table
+{
+    border-spacing: 0;
+    border-collapse: collapse;
 }
 
-input {
-  border-radius: 0;
+input
+{
+    border-radius: 0;
 
-  -webkit-appearance: none;
+    -webkit-appearance: none;
 }

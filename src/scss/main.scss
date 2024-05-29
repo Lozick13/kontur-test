@@ -3,39 +3,49 @@
 @import 'components/all';
 @import 'layout/all';
 @import 'sections/all';
-@import 'pages/all';
 
-body {
-  min-width: 320px;
-  background: $background;
-  padding: 16px 13px;
-  height: 500px;
-}
-.scroll-bar-off {
-  overflow: hidden;
+body
+{
+    min-width: 320px;
+    padding: 16px 13px;
 
-  height: 100vh;
+    background: $background;
+
+    @media (min-width: 1400px)
+    {
+        padding: 24px 121px 26px 119px;
+    }
 }
+
+.scroll-bar-off
+{
+    overflow: hidden;
+
+    height: 100vh;
+}
+
 button:hover,
 a:hover,
 li:hover,
-.pointer {
-  cursor: pointer;
+.pointer
+{
+    cursor: pointer;
 }
-.desktop-el {
-  display: none;
-}
-.mobile-el {
-  display: inline-block;
-}
-@media (min-width: 1400px) {
-  body {
-    padding: 24px 120px;
-  }
-  .desktop-el {
-    display: inline-block;
-  }
-  .mobile-el {
+
+.desktop-el
+{
     display: none;
-  }
+    @media (min-width: 1400px)
+    {
+        display: inline-block;
+    }
+}
+
+.mobile-el
+{
+    display: inline-block;
+    @media (min-width: 1400px)
+    {
+        display: none;
+    }
 }

@@ -1,77 +1,101 @@
-@font-face {
-  font-family: $font-family;
-  font-weight: 900;
-  font-style: normal;
+@font-face
+{
+    font-family: $font-family;
+    font-weight: 900;
+    font-style: normal;
 
-  src: url('../fonts/Gilroy-Black.ttf');
+    src: url('../fonts/Gilroy-Black.ttf');
 }
-@font-face {
-  font-family: $font-family;
-  font-weight: 500;
-  font-style: normal;
+@font-face
+{
+    font-family: $font-family;
+    font-weight: 500;
+    font-style: normal;
 
-  src: url('../fonts/Gilroy-Medium.ttf');
+    src: url('../fonts/Gilroy-Medium.ttf');
 }
-@font-face {
-  font-family: $font-family;
-  font-weight: 400;
-  font-style: normal;
+@font-face
+{
+    font-family: $font-family;
+    font-weight: 400;
+    font-style: normal;
 
-  src: url('../fonts/Gilroy-Regular.ttf');
+    src: url('../fonts/Gilroy-Regular.ttf');
 }
 
-.gilroy-black {
-  font: {
-    family: $font-family;
-    weight: 900;
-    size: 24px;
-  }
+//--шрифты
+.gilroy-black
+{
+    font:
+    {
+        family: $font-family;
+        weight: 900;
+        size: 24px;
+    };
+
     color: $black;
-  @media (min-width: 1400px) {
-    font-size: 46px;
-  }
+    @media (min-width: 1400px)
+    {
+        font-size: 46px;
+    }
 }
-.gilroy-medium {
-  font: {
-    family: $font-family;
-    weight: 500;
-    size: 24px;
-  }
+.gilroy-medium
+{
+    font:
+    {
+        family: $font-family;
+        weight: 500;
+        size: 24px;
+    };
+
     color: $black;
-  @media (min-width: 1400px) {
-    font-size: 46px;
-  }
+    @media (min-width: 1400px)
+    {
+        font-size: 46px;
+    }
 }
-.gilroy-regular {
-  font: {
-    family: $font-family;
-    weight: 400;
-    size: 12px;
-  }
+.gilroy-regular
+{
+    font:
+    {
+        family: $font-family;
+        weight: 400;
+        size: 12px;
+    };
+
     color: $black;
-  @media (min-width: 1400px) {
-    font-size: 16px;
-  }
+    @media (min-width: 1400px)
+    {
+        font-size: 16px;
+    }
 }
 
-.black{
-  color: $black;
+//--цвета
+.black
+{
+    color: $black;
 }
-.black_hover{
-  transition-duration: 0.5s;
-  &:hover{
+.black_hover
+{
+    transition-duration: .5s;
+    &:hover
+    {
+        color: $orange;
+    }
+}
+.grey
+{
+    color: $grey;
+}
+.orange
+{
     color: $orange;
-  }
 }
-.grey{
-  color: $grey;
+.blue
+{
+    color: $blue;
 }
-.orange{
-  color: $orange;
-}
-.blue{
-  color: $blue;
-}
-.white{
-  color: $white;
+.white
+{
+    color: $white;
 }

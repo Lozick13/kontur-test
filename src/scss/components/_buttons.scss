@@ -1,99 +1,139 @@
 //---логотип
-.logo {
-  font-size: 24px;
-  background: linear-gradient(
+.logo
+{
+    font-size: 24px;
+
+    background: linear-gradient(
     to right,
     $blue 27%,
     black 1%,
     black 50%,
     $orange 1%,
-    $orange 80%,
+    $orange 78%,
     black 1%,
     black 10%
-  );
-  span {
-    mix-blend-mode: lighten;
-  }
+    );
+    span
+    {
+        mix-blend-mode: lighten;
+    }
 }
-.logo_white {
-  span {
-    background: white;
-  }
+.logo_white
+{
+    span
+    {
+        background: white;
+    }
 }
-.logo_light-green {
-  span {
-    background: $light-green;
-  }
+.logo_light-green
+{
+    span
+    {
+        background: $light-green;
+    }
 }
 
 //---кнопки
-.base-button {
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  border-radius: 82px;
-  padding: 27px 40px;
-  border: none;
-  background: $orange;
-  transition-duration: 0.5s;
-  &:hover {
-    border: none;
-    background: $blue;
-  }
-}
-.min-button {
-  border-radius: 100%;
-  border: none;
-  width: 37px;
-  height: 37px;
-  background: $white;
-  transition-duration: 0.5s;
-  &:hover {
-    border: none;
-    background: $orange;
-  }
-  &:disabled {
-    background: $orange;
-  }
-}
-.clear-button {
-  padding: 0;
+.base-button
+{
+    font-size: 20px;
+    line-height: 97%;
 
-  border: none;
-  background: none;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 265px;
+    height: 70px;
+    padding-left: 22px;
+
+    transition-duration: .5s;
+    letter-spacing: -.03em;
+
+    border: none;
+    border-radius: 82px;
+    background: $orange;
+
+    gap: 16px;
+    &:hover
+    {
+        border: none;
+        background: $blue;
+    }
+}
+.min-button
+{
+    width: 37px;
+    height: 37px;
+
+    transition-duration: .5s;
+
+    border: none;
+    border-radius: 100%;
+    background: $white;
+    &:hover
+    {
+        border: none;
+        background: $orange;
+    }
+    &:disabled
+    {
+        background: $orange;
+    }
+}
+.clear-button
+{
+    padding: 0;
+
+    border: none;
+    background: none;
 }
 
 //---иконки
-.icon {
-  display: inline-block;
+.icon
+{
+    display: inline-block;
 
-  transition: 0.5s;
+    transition: .5s;
 
-  mask-size: cover;
+    mask-size: cover;
 }
-.icon_sidebar {
-  width: 17px;
-  height: 14px;
-  background: $orange;
-  mask: url(../img/sidebar-button.svg);
+.icon_sidebar
+{
+    width: 17px;
+    height: 14px;
+
+    background: $orange;
+
+    mask: url(../img/sidebar-button.svg);
 }
-.icon_call-arrow {
-  width: 16px;
-  height: 16px;
-  background: $white;
-  mask: url(../img/call-arrow.svg);
+.icon_call-arrow
+{
+    width: 16px;
+    height: 16px;
+
+    background: $white;
+
+    mask: url(../img/call-arrow.svg);
 }
-.icon_slider-button {
-  width: 15px;
-  height: 16px;
-  background: $black;
-  mask: url(../img/slider-arrow.svg);
+.icon_slider-button
+{
+    width: 15px;
+    height: 16px;
+
+    background: $black;
+
+    mask: url(../img/slider-arrow.svg);
 }
-.icon_slider-button-rotate {
-  width: 15px;
-  height: 16px;
-  background: $black;
-  transform: rotate(180deg);
-  mask: url(../img/slider-arrow.svg);
+.icon_slider-button-rotate
+{
+    width: 15px;
+    height: 16px;
+
+    transform: rotate(180deg);
+
+    background: $black;
+
+    mask: url(../img/slider-arrow.svg);
 }
