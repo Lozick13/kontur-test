@@ -4,24 +4,109 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CoDe</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <header class="header">
-      <div class="header__left">
-        <a href="#" class="gilroy-medium logo logo_white pointer"><span>CoDe</span> </a>
-        <nav class="navigation">
-          <a href="" class="gilroy-regular black black_hover">Чему вы научитесь</a>
-          <a href="" class="gilroy-regular black black_hover">Процесс обучения</a>
-          <a href="" class="gilroy-regular black black_hover">Стоимость</a>
-          <a href="" class="gilroy-regular black black_hover">Контакты</a>
-        </nav>
+      <div class="header__top">
+        <div class="header__left">
+          <a href="#" class="gilroy-medium logo logo_white pointer"><span>CoDe</span> </a>
+          <nav class="navigation">
+            <a href="" class="gilroy-regular black black_hover">Чему вы научитесь</a>
+            <a href="" class="gilroy-regular black black_hover">Процесс обучения</a>
+            <a href="" class="gilroy-regular black black_hover">Стоимость</a>
+            <a href="" class="gilroy-regular black black_hover">Контакты</a>
+          </nav>
+        </div>
+        <a href="tel:74993489396" class="gilroy-regular blue header__tel"
+          >+7 (499) 348 93 96</a
+        >
+        <button class="clear-button header__sidebar" id="sidebar-open">
+          <i class="icon icon_sidebar"></i>
+        </button>
       </div>
-      <a href="tel:74993489396" class="gilroy-regular blue header__tel"
-        >+7 (499) 348 93 96</a
-      >
-      <button class="clear-button header__sidebar" id="sidebar-open">
-        <i class="icon icon_sidebar"></i>
-      </button>
+
+      <section class="slider swiper-container">
+        <div class="swiper-wrapper">
+          <article class="slider__item swiper-slide">
+            <div class="slider__header">
+              <div class="slider__title">
+                <h1 class="gilroy-medium black">
+                  Школа
+                  <span class="desktop-el gilroy-regular orange">{</span
+                  ><span class="gilroy-black">программирования</span
+                  ><span class="desktop-el gilroy-regular orange">}</span><br />
+                  для тех, кому нужны<br class="desktop-el" />
+                  реальные навыки,<br />
+                  а не просто сертификат
+                </h1>
+                <p class="gilroy-regular black mobile-el">
+                  Пройдите тестирование, чтобы получить доступ к бесплатным вводным урокам
+                </p>
+                <p class="gilroy-regular black desktop-el">
+                  Закажите звонок, и наш специалист свяжется с вами в ближайшее время
+                </p>
+              </div>
+              <button class="base-button white gilroy-regular">
+                Заказать звонок
+                <i class="icon icon_call-arrow"></i>
+              </button>
+            </div>
+
+            <img src="img/slider-item1.svg" alt="Школа программирования" />
+          </article>
+          <article class="slider__item swiper-slide">
+            <div class="slider__header">
+              <div class="slider__title">
+                <h1 class="gilroy-medium black">Обучение через практику</h1>
+                <p class="gilroy-regular black">
+                  Всё, что вы узнали, вы тут же начинаете применять на практике. Вы сразу
+                  видите результаты своего труда.
+                </p>
+              </div>
+              <button class="base-button white gilroy-regular">
+                Заказать звонок
+                <i class="icon icon_call-arrow"></i>
+              </button>
+            </div>
+            <img src="img/slider-item2.svg" alt="Практика" />
+          </article>
+          <article class="slider__item swiper-slide">
+            <div class="slider__header">
+              <div class="slider__title">
+                <h1 class="gilroy-medium black">
+                  Весь материал разбит на небольшие уроки
+                </h1>
+                <p class="gilroy-regular black">
+                  Теория и практика подаются маленькими порциями. Так вам будет легче
+                  усваивать новые знания.
+                </p>
+              </div>
+              <button class="base-button white gilroy-regular">
+                Заказать звонок
+                <i class="icon icon_call-arrow"></i>
+              </button>
+            </div>
+            <img src="img/slider-item3.svg" alt="Уроки" />
+          </article>
+        </div>
+        <button
+          class="slider__button slider__button_prev min-button white gilroy-regular"
+        >
+          <i class="icon icon_slider-button"></i>
+        </button>
+        <button
+          class="slider__button slider__button_next min-button white gilroy-regular"
+        >
+          <i class="icon icon_slider-button-rotate"></i>
+        </button>
+      </section>
     </header>
+
+    <main></main>
   </body>
 </html>

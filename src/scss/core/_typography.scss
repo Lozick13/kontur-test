@@ -3,24 +3,24 @@
   font-weight: 900;
   font-style: normal;
 
-  src: local($font-family), url('../fonts/Gilroy-SemiBold.ttf');
+  src: url('../fonts/Gilroy-Black.ttf');
 }
 @font-face {
   font-family: $font-family;
   font-weight: 500;
   font-style: normal;
 
-  src: local($font-family), url('../fonts/Gilroy-Medium.ttf');
+  src: url('../fonts/Gilroy-Medium.ttf');
 }
 @font-face {
   font-family: $font-family;
   font-weight: 400;
   font-style: normal;
 
-  src: local($font-family), url('../fonts/Gilroy-Regular.ttf');
+  src: url('../fonts/Gilroy-Regular.ttf');
 }
 
-.gilroy-semibold {
+.gilroy-black {
   font: {
     family: $font-family;
     weight: 900;
@@ -71,4 +71,7 @@
 }
 .blue{
   color: $blue;
+}
+.white{
+  color: $white;
 }

@@ -22,10 +22,20 @@ li:hover,
 .pointer {
   cursor: pointer;
 }
-
-@media (min-width: 1400px){
-  body{
+.desktop-el {
+  display: none;
+}
+.mobile-el {
+  display: inline-block;
+}
+@media (min-width: 1400px) {
+  body {
     padding: 24px 120px;
   }
+  .desktop-el {
+    display: inline-block;
+  }
+  .mobile-el {
+    display: none;
+  }
 }
-
