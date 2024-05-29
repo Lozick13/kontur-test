@@ -7,13 +7,13 @@
 body
 {
     min-width: 320px;
-    padding: 16px 13px;
+    padding: 16px 10px;
 
     background: $background;
 
     @media (min-width: 1400px)
     {
-        padding: 24px 121px 26px 119px;
+        padding: 24px 118px 26px 116px;
     }
 }
 
@@ -48,4 +48,14 @@ li:hover,
     {
         display: none;
     }
+}
+
+main
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 24px;
 }

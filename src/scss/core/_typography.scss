@@ -9,6 +9,14 @@
 @font-face
 {
     font-family: $font-family;
+    font-weight: 600;
+    font-style: normal;
+
+    src: url('../fonts/Gilroy-SemiBold.ttf');
+}
+@font-face
+{
+    font-family: $font-family;
     font-weight: 500;
     font-style: normal;
 
@@ -23,6 +31,7 @@
     src: url('../fonts/Gilroy-Regular.ttf');
 }
 
+
 //--шрифты
 .gilroy-black
 {
@@ -30,6 +39,21 @@
     {
         family: $font-family;
         weight: 900;
+        size: 24px;
+    };
+
+    color: $black;
+    @media (min-width: 1400px)
+    {
+        font-size: 46px;
+    }
+}
+.gilroy-semi-bold
+{
+    font:
+    {
+        family: $font-family;
+        weight: 600;
         size: 24px;
     };
 
