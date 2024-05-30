@@ -1,0 +1,11 @@
+.map
+{
+    height: 415px;
+
+    border-radius: 30px;
+
+    @media (min-width: 1400px)
+    {
+        height: 423px;
+    }
+}
