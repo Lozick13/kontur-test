@@ -113,6 +113,16 @@
     transition: .5s;
 
     mask-size: cover;
+
+    &_cross
+    {
+        width: 15px;
+        height: 15px;
+
+        background: $light-grey;
+
+        mask: url(../img/cross.svg);
+    }
     &_sidebar
     {
         width: 17px;

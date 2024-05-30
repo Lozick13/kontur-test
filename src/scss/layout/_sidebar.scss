@@ -1,0 +1,65 @@
+.sidebar
+{
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+
+    display: none;
+
+    width: 100vw;
+    height: 100vh;
+    padding: 90.5px 43px;
+
+    animation: sidebarOpen .25s ease;
+
+    background: $white;
+
+    button
+    {
+        position: absolute;
+        top: 32px;
+        right: 30px;
+    }
+
+    .navigation
+    {
+        align-items: flex-start;
+
+        gap: 21px;
+        a
+        {
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+
+    &_active
+    {
+        display: block;
+    }
+}
+@keyframes sidebarOpen
+{
+    0%
+    {
+        position: absolute;
+        left: -100vw;
+    }
+    100%
+    {
+        left: 0;
+    }
+}
+@keyframes sidebarClose
+{
+    0%
+    {
+        left: 0;
+    }
+    100%
+    {
+        position: absolute;
+        left: -100vw;
+    }
+}
