@@ -1,0 +1,152 @@
+.advantages
+{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    margin-top: 6px;
+
+    gap: 11px;
+
+    @media (min-width: 1400px)
+    {
+        margin-top: 0;
+        padding: 0 4px 0 3px;
+
+        gap: 32px;
+    }
+
+    &__item
+    {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+
+        gap: 12px;
+
+        img
+        {
+            width: 300px;
+
+            border-radius: 40px;
+
+            @media (min-width: 1400px)
+            {
+                flex: auto;
+
+                height: 100%;
+            }
+        }
+
+        &:nth-of-type(1)
+        {
+            img
+            {
+                @media (max-width: 1399px)
+                {
+                    height: 234px;
+                }
+            }
+        }
+
+        &:nth-of-type(2)
+        {
+            .advantages__card
+            {
+                @media (max-width: 1399px)
+                {
+                    padding: 30px 20px 31px;
+
+                    gap: 16px;
+                }
+            }
+
+            img
+            {
+                @media (max-width: 1399px)
+                {
+                    height: 243px;
+                }
+                @media (min-width: 1400px)
+                {
+                    order: 1;
+                }
+            }
+
+            @media (min-width: 1400px)
+            {
+                height: 290px;
+            }
+        }
+
+        @media (min-width: 1400px)
+        {
+            flex-direction: row;
+
+            height: 313px;
+
+            gap: 32px;
+        }
+    }
+
+
+
+    &__card
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        padding: 38px 20px 37px;
+
+        border-radius: 30px;
+        background: $light-green;
+
+        gap: 18px;
+
+        @media (min-width: 1400px)
+        {
+            width: 730px;
+            padding: 55px 0 0 100px;
+
+            border-radius: 40px;
+
+            gap: 25px;
+        }
+
+        h3
+        {
+            font-size: 20px;
+            line-height: 95%;
+            @media (min-width: 1400px)
+            {
+                font-size: 32px;
+                line-height: 94%;
+            }
+        }
+
+        p
+        {
+            line-height: 142%;
+
+            @media (min-width: 1400px)
+            {
+                line-height: 156%;
+            }
+        }
+    }
+
+    &__description
+    {
+        display: flex;
+        flex-direction: column;
+
+        gap: 18px;
+
+        @media (min-width: 1400px)
+        {
+            gap: 15px;
+        }
+    }
+}

@@ -58,4 +58,9 @@ main
     justify-content: center;
 
     gap: 24px;
+
+    @media (min-width: 1400px)
+    {
+        gap: 60px;
+    }
 }
