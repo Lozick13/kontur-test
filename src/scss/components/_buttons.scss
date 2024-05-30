@@ -17,22 +17,28 @@
     {
         mix-blend-mode: lighten;
     }
-}
-.logo_white
-{
-    span
-    {
-        background: white;
-    }
-}
-.logo_light-green
-{
-    span
-    {
-        background: $light-green;
-    }
-}
 
+    &_white
+    {
+        span
+        {
+            background: white;
+        }
+    }
+
+    &_background
+    {
+        span
+        {
+            background: $background;
+        }
+    }
+
+    &_big
+    {
+        font-size: 36px;
+    }
+}
 //---кнопки
 .base-button
 {
@@ -66,20 +72,29 @@
 {
     width: 37px;
     height: 37px;
+    padding-top: 4px;
 
     transition-duration: .5s;
 
     border: none;
     border-radius: 100%;
     background: $white;
+
     &:hover
     {
-        border: none;
         background: $orange;
     }
     &:disabled
     {
         background: $orange;
+    }
+    &_socials
+    {
+        background: $black;
+        &:hover
+        {
+            background: $orange;
+        }
     }
 }
 .clear-button
@@ -98,42 +113,78 @@
     transition: .5s;
 
     mask-size: cover;
-}
-.icon_sidebar
-{
-    width: 17px;
-    height: 14px;
+    &_sidebar
+    {
+        width: 17px;
+        height: 14px;
 
-    background: $orange;
+        background: $orange;
 
-    mask: url(../img/sidebar-button.svg);
-}
-.icon_call-arrow
-{
-    width: 16px;
-    height: 16px;
+        mask: url(../img/sidebar-button.svg);
+    }
+    &_call-arrow
+    {
+        width: 16px;
+        height: 16px;
 
-    background: $white;
+        background: $white;
 
-    mask: url(../img/call-arrow.svg);
-}
-.icon_slider-button
-{
-    width: 15px;
-    height: 16px;
+        mask: url(../img/call-arrow.svg);
+    }
+    &_slider-button
+    {
+        width: 15px;
+        height: 16px;
 
-    background: $black;
+        background: $black;
 
-    mask: url(../img/slider-arrow.svg);
-}
-.icon_slider-button-rotate
-{
-    width: 15px;
-    height: 16px;
+        mask: url(../img/slider-arrow.svg);
+    }
+    &_slider-button-rotate
+    {
+        width: 15px;
+        height: 16px;
 
-    transform: rotate(180deg);
+        transform: rotate(180deg);
 
-    background: $black;
+        background: $black;
 
-    mask: url(../img/slider-arrow.svg);
+        mask: url(../img/slider-arrow.svg);
+    }
+    &_inst
+    {
+        width: 19px;
+        height: 19px;
+
+        background: $white;
+
+        mask: url(../img/inst.svg);
+    }
+    &_vk
+    {
+        width: 20px;
+        height: 11px;
+
+        background: $white;
+
+        mask: url(../img/vk.svg);
+    }
+    &_facebook
+    {
+        width: 9px;
+        height: 17px;
+
+        background: $white;
+
+        mask: url(../img/facebook.svg);
+    }
+    &_youtube
+    {
+        width: 21px;
+        height: 15px;
+
+        background: $white;
+
+        mask: url(../img/youtube.svg);
+    }
 }

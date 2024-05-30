@@ -57,10 +57,14 @@ main
     flex-direction: column;
     justify-content: center;
 
+    margin-bottom: 36px;
+
     gap: 24px;
 
     @media (min-width: 1400px)
     {
+        margin-bottom: 58px;
+
         gap: 60px;
     }
 }
