@@ -121,7 +121,7 @@
 
         background: $light-grey;
 
-        mask: url(../img/cross.svg);
+        mask: url('../img/cross.svg');
     }
     &_sidebar
     {
@@ -130,7 +130,7 @@
 
         background: $orange;
 
-        mask: url(../img/sidebar-button.svg);
+        mask: url('../img/sidebar-button.svg');
     }
     &_call-arrow
     {
@@ -139,7 +139,7 @@
 
         background: $white;
 
-        mask: url(../img/call-arrow.svg);
+        mask: url('../img/call-arrow.svg');
     }
     &_slider-button
     {
@@ -148,7 +148,7 @@
 
         background: $black;
 
-        mask: url(../img/slider-arrow.svg);
+        mask: url('../img/slider-arrow.svg');
     }
     &_slider-button-rotate
     {
@@ -159,7 +159,7 @@
 
         background: $black;
 
-        mask: url(../img/slider-arrow.svg);
+        mask: url('../img/slider-arrow.svg');
     }
     &_inst
     {
@@ -168,7 +168,7 @@
 
         background: $white;
 
-        mask: url(../img/inst.svg);
+        mask: url('../img/inst.svg');
     }
     &_vk
     {
@@ -177,7 +177,7 @@
 
         background: $white;
 
-        mask: url(../img/vk.svg);
+        mask: url('../img/vk.svg');
     }
     &_facebook
     {
@@ -186,7 +186,7 @@
 
         background: $white;
 
-        mask: url(../img/facebook.svg);
+        mask: url('../img/facebook.svg');
     }
     &_youtube
     {
@@ -195,6 +195,6 @@
 
         background: $white;
 
-        mask: url(../img/youtube.svg);
+        mask: url('../img/youtube.svg');
     }
 }
