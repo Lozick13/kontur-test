@@ -16,12 +16,72 @@
         <i class="icon icon_cross"></i>
       </button>
       <nav class="navigation">
-        <a href="" class="gilroy-regular black black_hover">Чему вы научитесь</a>
-        <a href="" class="gilroy-regular black black_hover">Процесс обучения</a>
-        <a href="" class="gilroy-regular black black_hover">Стоимость</a>
-        <a href="" class="gilroy-regular black black_hover">Контакты</a>
-        <a href="" class="gilroy-regular black black_hover">Регистрация</a>
+        <a href="#" class="gilroy-regular black black_hover">Чему вы научитесь</a>
+        <a href="#" class="gilroy-regular black black_hover">Процесс обучения</a>
+        <a href="#" class="gilroy-regular black black_hover">Стоимость</a>
+        <a href="#" class="gilroy-regular black black_hover">Контакты</a>
+        <a href="#" class="gilroy-regular black black_hover">Регистрация</a>
       </nav>
+    </article>
+
+    <article class="call-popup">
+      <div class="call-popup__content">
+        <h2 class="gilroy-regular black">Заказать звонок</h2>
+        <form id="call-popup-form">
+          <div class="call-popup__row">
+            <label class="gilroy-medium black" for="name">Имя</label>
+            <input
+              class="gilroy-regular black"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="ваше имя"
+              required
+            />
+          </div>
+          <div class="call-popup__row">
+            <label class="gilroy-medium black" for="phone">Телефон</label>
+            <input
+              class="gilroy-regular black"
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+7 ХХХ - ХХХ - ХХ -ХХ"
+              required
+            />
+          </div>
+          <div class="call-popup__row">
+            <label class="gilroy-medium black" for="email">Email</label>
+            <input
+              class="gilroy-regular black"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="mail@site.com"
+              required
+            />
+          </div>
+          <div class="call-popup__row">
+            <label class="gilroy-medium black" for="message">Сообщение</label>
+            <textarea
+              class="gilroy-regular black"
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Ваше сообщение ..."
+              required
+            ></textarea>
+            <p class="gilroy-regular">
+              Нажимая кнопку “Отправить”, соглашаюсь с <br />политикой конфидениальности
+            </p>
+          </div>
+
+          <button class="base-button white gilroy-regular" id="popup-close">
+            Отправить
+            <i class="icon icon_call-arrow"></i>
+          </button>
+        </form>
+      </div>
     </article>
 
     <header class="header">
@@ -29,10 +89,10 @@
         <div class="header__left">
           <a href="#" class="gilroy-medium logo logo_white pointer"><span>CoDe</span> </a>
           <nav class="navigation navigation_horizontal">
-            <a href="" class="gilroy-regular black black_hover">Чему вы научитесь</a>
-            <a href="" class="gilroy-regular black black_hover">Процесс обучения</a>
-            <a href="" class="gilroy-regular black black_hover">Стоимость</a>
-            <a href="" class="gilroy-regular black black_hover">Контакты</a>
+            <a href="#" class="gilroy-regular black black_hover">Чему вы научитесь</a>
+            <a href="#" class="gilroy-regular black black_hover">Процесс обучения</a>
+            <a href="#" class="gilroy-regular black black_hover">Стоимость</a>
+            <a href="#" class="gilroy-regular black black_hover">Контакты</a>
           </nav>
         </div>
         <div class="header__right">
@@ -66,7 +126,7 @@
                   Закажите звонок, и наш специалист свяжется с вами в ближайшее время
                 </p>
               </div>
-              <button class="base-button white gilroy-regular">
+              <button class="base-button white gilroy-regular popup-open">
                 Заказать звонок
                 <i class="icon icon_call-arrow"></i>
               </button>
@@ -83,7 +143,7 @@
                   видите результаты своего труда.
                 </p>
               </div>
-              <button class="base-button white gilroy-regular">
+              <button class="base-button white gilroy-regular popup-open">
                 Заказать звонок
                 <i class="icon icon_call-arrow"></i>
               </button>
@@ -101,7 +161,7 @@
                   усваивать новые знания.
                 </p>
               </div>
-              <button class="base-button white gilroy-regular">
+              <button class="base-button white gilroy-regular popup-open">
                 Заказать звонок
                 <i class="icon icon_call-arrow"></i>
               </button>
@@ -310,16 +370,20 @@
 
         <div class="footer__main">
           <nav class="navigation">
-            <a href="" class="gilroy-regular black black_hover">Чему вы научитесь</a>
-            <a href="" class="gilroy-regular black black_hover">Процесс обучения</a>
-            <a href="" class="gilroy-regular black black_hover">Стоимость</a>
-            <a href="" class="gilroy-regular black black_hover">Контакты</a>
-            <a href="" class="gilroy-regular black black_hover">Регистрация</a>
+            <a href="#" class="gilroy-regular black black_hover">Чему вы научитесь</a>
+            <a href="#" class="gilroy-regular black black_hover">Процесс обучения</a>
+            <a href="#" class="gilroy-regular black black_hover">Стоимость</a>
+            <a href="#" class="gilroy-regular black black_hover">Контакты</a>
+            <a href="#" class="gilroy-regular black black_hover">Регистрация</a>
           </nav>
 
           <div class="footer__contacts">
-            <a href="tel:79999999999" class="gilroy-regular blue">+7 (999) 999 99 99</a>
-            <a href="" class="gilroy-regular black">info@code.ru</a>
+            <a href="tel:79999999999" class="gilroy-regular blue footer_tel"
+              >+7 (999) 999 99 99</a
+            >
+            <a href="info@code.ru" class="gilroy-regular black black_hover"
+              >info@code.ru</a
+            >
           </div>
         </div>
       </div>
@@ -331,8 +395,12 @@
             права защищены</span
           >
           <div class="footer__documents">
-            <a href="" class="gilroy-regular orange">Пользовательское соглашение</a>
-            <a href="" class="gilroy-regular orange">Политика конфиденциальности</a>
+            <a href="#" class="gilroy-regular orange orange_hover"
+              >Пользовательское соглашение</a
+            >
+            <a href="#" class="gilroy-regular orange orange_hover"
+              >Политика конфиденциальности</a
+            >
           </div>
         </div>
       </div>

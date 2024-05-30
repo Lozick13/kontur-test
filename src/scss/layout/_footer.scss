@@ -152,13 +152,36 @@
         }
     }
 
+    &_tel
+    {
+        &:before
+        {
+            position: absolute;
+            bottom: 24px;
+            left: 0;
+
+            width: 100%;
+            height: 1px;
+
+            content: '';
+            transition-duration: .5s;
+
+            opacity: 0;
+            background: $blue;
+        }
+        &:hover:before
+        {
+            opacity: 1;
+        }
+    }
+
     &__bottom
     {
         display: flex;align-items: center;
         flex-direction: column;
         &:before
         {
-            width: 300px;
+            width: 100%;
             height: 1px;
             margin: -13.5px 0 31px;
 
@@ -168,7 +191,6 @@
 
             @media (min-width: 1400px)
             {
-                width: 1160px;
                 margin: 9px 0 32px;
             }
         }

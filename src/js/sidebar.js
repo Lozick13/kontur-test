@@ -17,6 +17,6 @@ export function toggleSidebar() {
       sidebar.classList.toggle('sidebar_active');
       body.classList.toggle('scroll-bar-off');
     },
-    sidebar.classList.contains('active') ? 250 : 0,
+    sidebar.classList.contains('sidebar_active') ? 250 : 0,
   );
 }

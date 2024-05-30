@@ -98,13 +98,13 @@
 .black
 {
     color: $black;
-}
-.black_hover
-{
-    transition-duration: .5s;
-    &:hover
+    &_hover
     {
-        color: $orange;
+        transition-duration: .5s;
+        &:hover
+        {
+            color: $orange;
+        }
     }
 }
 .grey
@@ -114,6 +114,14 @@
 .orange
 {
     color: $orange;
+    &_hover
+    {
+        transition-duration: .5s;
+        &:hover
+        {
+            color: $grey;
+        }
+    }
 }
 .blue
 {

@@ -1,0 +1,90 @@
+.call-popup
+{
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+
+    display: none;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: rgba(0, 0, 0, .2);
+
+    &_active
+    {
+        display: block;
+    }
+
+    &__content
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        width: 635px;
+        height: 942px;
+        padding: 82px 53px;
+
+        transform: translate(-50%, -50%);
+
+        background: $white;
+
+        gap: 48px;
+
+        h2
+        {
+            font-size: 32px;
+            line-height: 94%;
+        }
+    }
+
+    #call-popup-form
+    {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+
+        gap: 25px;
+    }
+
+    &__row
+    {
+        display: flex;
+        flex-direction: column;
+
+        gap: 16px;
+
+        label
+        {
+            font-size: 16px;
+        }
+
+        input
+        {
+            padding: 28px 29.75px;
+
+            border: 1px solid #9f9f9f;
+            border-radius: 10px;
+        }
+
+        textarea
+        {
+            padding: 24px 30px;
+
+            border: 1px solid #9f9f9f;
+            border-radius: 10px;
+        }
+
+        p
+        {
+            line-height: 114%;
+        }
+    }
+}
