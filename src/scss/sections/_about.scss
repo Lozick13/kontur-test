@@ -46,6 +46,7 @@
         }
     }
 
+    //--элемент блока
     &__item
     {
         display: flex;
@@ -61,6 +62,7 @@
         background: $light-green;
 
 
+        //настройка каждого элемента
         &:nth-of-type(4n+3),
         &:nth-of-type(4n+4)
         {
@@ -110,8 +112,8 @@
         {
             padding: 22px 0 19px;
         }
-
     }
+
 
     @media (min-width: 1400px)
     {
@@ -125,10 +127,10 @@
 
             .about__text
             {
-
                 gap: 10px;
             }
 
+            //--настройка каждого элемента, ПК
             &:nth-of-type(4n+3),
             &:nth-of-type(4n+4)
             {
@@ -214,13 +216,18 @@
             }
 
 
-            &:nth-of-type(2),&:nth-of-type(6),&:nth-of-type(7){
+            &:nth-of-type(2),
+            &:nth-of-type(6),
+            &:nth-of-type(7)
+            {
                 justify-content: start;
+
                 gap: 12px;
             }
         }
     }
 
+    //--элемент блока, горизонтальный
     .about__item_horizontal
     {
         @media (max-width: 1399px)
